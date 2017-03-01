@@ -1,0 +1,34 @@
+<section class="view can-do">
+    <header class="view-header">
+        <h1 class="view-title">Co mogę dla Ciebie zrobić?</h1>
+        <p class="view-desc  justify">
+            W dzisiejszych czasach strona internetowa to podstawa każdej działalności gospodarczej - nie zależnie od
+            rynku na którym działa. W związku z tym, coraz więcej firm oraz osób prywatnych decyduje się na inwestycję
+            we własną stronę internetową. Jednak nie wystarczy tylko być, trzeba jeszcze odpowiednio się prezentować,
+            dlatego ważne jest, aby zlecić to odpowiedniej osobie, bo dobra strona przyciągnie nowych klientów oraz
+            utrzyma obecnych w lepszym kontakcie. Zobacz co mogę dla Ciebie przygotować.
+        </p>
+    </header>
+    <div class="card container-flex wrap ">
+        <div class="card col-xs12 col-s12 col-m6 col-l3" ng-repeat="offer in offers">
+            <div class="card-icon">
+                <i class="{{offer.offer_icon}}"></i>
+            </div>
+            <h3 class="card-title">
+                {{offer.offer_name}}
+            </h3>
+            <p class="card-desc">
+                {{offer.offer_desc}}
+            </p>
+        </div>
+    </div>
+    <p class="view-desc">
+        Zainteresowała Cię moja oferta? Skontaktuj się.
+    </p>
+    <a class="btn" href data-ng-click="view.changeView('/contact')">
+        <svg>
+            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+        </svg>
+        Kontakt
+    </a>
+</section>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adrian Bury | Portfolio</title>
+    <meta name="description" content="Programista oraz front-end developer do Twojej dyspozycji">
+    <meta name="keywords" content="HTML,CSS,JavaScript, Front-End, Developer, PHP, WordPress, Programista, Zatrudnij">
+    <meta name="author" content="Adrian Bury">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://adrianbury.pl/images/favicon.png"/>
+
+    <!--FB-->
+    <meta property="og:url" content="http://adrianbury.pl"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Adrian Bury | Portfolio"/>
+    <meta property="og:description" content="Porfesjonalne tworzenie stron internetowych!"/>
+    <meta property="og:image" content="http://adrianbury.pl/images/word.jpg"/>
+
+
+    <!--[if IE]>
+    <link href="stylesheets/ie.css" media="screen" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+
+
+    <!--JS plugins-->
+    <script src="javascripts/modernizr-custom.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="javascripts/plugins.js"></script>
+
+    <!--ANGULAR-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <!--SCROLL BAR-->
+    <script src="bower_components/angular-perfect-scrollbar-2/dist/index.js"></script>
+
+
+    <!--CSS-->
+    <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <!--ANGULAR APP-->
+    <script src="javascripts/angular-app.js"></script>
+
+
+</head>
+<body ng-app="app">
+
+<!--[if lt IE 10]>
+<span class="box-info">Używasz <strong>przestarzałej</strong> przeglądarki internetowej! Proszę <a
+        href="http://browsehappy.com/">zaktualizować
+    swoją przeglądarkę</a> aby zwiększyć swoje wrażenia z przeglądania internetu.</span>
+<![endif]-->
+
+<noscript>
+    <span class="box-info">W przeglądarce została wyłączoną obsługa <strong>JavaScript</strong>! Aby strona wyświetlała się poprawnie należy włączyć obsługę JavaScript!</span>
+</noscript>
+
+<i id="show-site-nav" class="fa fa-bars" aria-hidden="true"></i>
+<nav id="main-site-nav" data-site-nav="site-nav" class="site-nav"></nav>
+<perfect-scrollbar id="wrapper-main" class="scroll-wrapper-main" update="update">
+    <div data-audio-player="audio-player"></div>
+    <main data-ng-view></main>
+</perfect-scrollbar>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-84768418-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<section class="view projects">
+    <header class="view-header">
+        <h1 class="view-title">Realizacje</h1>
+        <p class="view-desc">
+            Zobacz przykładowe projekty nad którymi pracowałem
+        </p>
+    </header>
+    <ul class="container-flex wrap center projects-list">
+        <li class="col-xs12 col-s6  col-m4" data-ng-repeat="project in projects">
+            <a href data-ng-click="view.changeView('/projects/'+project.project_id)">
+                <img data-ng-src="{{project.project_img}}" alt="{{project.project_name}}" width="300" height="250"/>
+                <h2 class="name">{{project.project_name}}</h2>
+            </a>
+
+        </li>
+    </ul>
+</section>

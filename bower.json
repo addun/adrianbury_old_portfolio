@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "description": "Portfolio Adriana Bury",
+  "main": "index.html",
+  "authors": [
+    "Adrian Bury"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.8",
+    "angular-perfect-scrollbar": "^0.0.4",
+    "angular-route": "^1.5.8",
+    "angular": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "components-font-awesome": "4.7.0",
+    "jquery": "^3.1.0"
+  }
+}

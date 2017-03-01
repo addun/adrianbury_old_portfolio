@@ -1,0 +1,28 @@
+<perfect-scrollbar class="scroll-wrapper-site-nav" update="update">
+    <ul data-ng-click="hideMenuBar()">
+        <li>
+            <a href data-ng-class="{active: isActive('/')}" data-ng-click="changeView('/')">
+                <i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        </li>
+        <li>
+            <a href data-ng-class="{active: isActive('/about-me')}" data-ng-click="changeView('/about-me')">
+                <i class="fa fa-id-card" aria-hidden="true"></i>O mnie</a>
+        </li>
+        <li>
+            <a href data-ng-class="{active: isActive('/can-do')}" data-ng-click="changeView('/can-do')">
+                <i class="fa fa-coffee" aria-hidden="true"></i>Oferta</a>
+        </li>
+        <li>
+            <a href data-ng-class="{active: isActive('/projects')}" data-ng-click="changeView('/projects')">
+                <i class="fa fa-code" aria-hidden="true"></i>Projekty</a>
+        </li>
+        <li>
+            <a href data-ng-class="{active: isActive('/skills')}" data-ng-click="changeView('/skills')">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>Umiejętności</a>
+        </li>
+        <li>
+            <a href data-ng-class="{active: isActive('/contact')}" data-ng-click="changeView('/contact')">
+                <i class="fa fa-comments-o" aria-hidden="true"></i>Kontakt</a>
+        </li>
+    </ul>
+</perfect-scrollbar>

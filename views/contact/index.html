@@ -1,0 +1,58 @@
+<section class="view contact ">
+    <header class="view-header">
+        <h1 class="view-title">Skontaktuj się ze mną</h1>
+        <p class="view-desc justify">
+            Jeżeli masz jakieś pytanie, chcesz dowiedzieć się więcej szczegółów lub jesteś zainteresowany współpracą,
+            wykorzystaj formularz kontaktowy umieszczony poniżej. Odpisuje przeważnie w przeciągu 24h. Natomiast, jeśli
+            wolisz zadzwonić, podaję również numer telefonu, jak nie odbiorę, proszę o zostawienie wiadomości
+            tekstowej-oddzwonię. I pamiętaj-"kto pyta, nie błądzi".
+        </p>
+    </header>
+    <div class="container-flex wrap">
+        <div class="col-xs12 col-l6">
+            <blockquote class="big">
+                Każdy człowiek ma jakąś potrzebę kontaktu z ludźmi, ale kontaktu nie przypadkowego, tylko jakiejś
+                bliskości
+                charakteru, myślenia, nastroju.
+                <cite>Tadeusz Konwicki</cite>
+            </blockquote>
+            <ul class="media">
+                <li>
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-phone fa-stack-1x"></i>
+                    </span>
+                    <span>+48 691 341 765</span>
+                </li>
+                <li>
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-paper-plane-o fa-stack-1x"></i>
+                    </span>
+                    <span>kubaadrian2@gmail.com</span>
+                </li>
+                <li>
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                    <a href="https://www.facebook.com/adrian.bury.3" target="_blank">facebook.com/adrian.bury.3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs12 col-l6">
+            <p id="success">Wiadomość została wysłana! <br/></p>
+            <p id="error" data-ng-hide="emailForm.$valid">Proszę poprawnie uzupełnić formularz!</p>
+            <form id="emailForm" name="emailForm" class="col-s-6" novalidate>
+                <input data-ng-model="contact.name" ng-minlength="1" id="name" type="text" required
+                       placeholder="Imię i nazwisko"/>
+                <input ng-model="contact.email" ng-minlength="1" id="email" type="email" required placeholder="E-mail"/>
+                <textarea data-ng-model="contact.msg" data-ng-minlength="1" id="msg" rows="7" required
+                          placeholder="Treść wiadomości"></textarea>
+                <input id="submit" data-ng-click="sendEmail()" type="submit" value="Wyślij"/>
+            </form>
+        </div>
+    </div>
+
+
+</section>

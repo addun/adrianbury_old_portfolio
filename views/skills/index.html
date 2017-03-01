@@ -1,0 +1,16 @@
+<section class="view skills">
+    <header class="view-header">
+        <h1 class="view-title">Umiejętności</h1>
+        <p class="view-desc">
+            Poznaj moje umiejętności, narzędzia oraz technologie, jakie wykorzystuję podczas tworzenia stron internetowych.
+        </p>
+    </header>
+    <div class="container-flex wrap">
+        <ul class="container-flex wrap center-justify col-xs12 col-l6 skills-icon">
+            <li class="col-xs6 col-s3 "  ng-repeat="skill in skillsIcons"><img ng-src="{{skill.skill_img}}" alt="{{skill.skill_alt}}"/></li>
+        </ul>
+        <ul class="col-xs12 col-l6 skills-list">
+            <li ng-repeat="skill in skillsList"><p>{{skill.skill_desc}}</p></li>
+        </ul>
+    </div>
+</section>
